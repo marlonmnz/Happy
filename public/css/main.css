@@ -6,7 +6,8 @@
 
 body{
     height: 100vh;
-    color: #fff;    
+    color: #fff;   
+    background: #ebf2f5;
 }
 
 :root{
