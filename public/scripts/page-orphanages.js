@@ -1,6 +1,6 @@
 // Create a map
 
-const { orphanages } = require("../../src/pages");
+// const { orphanages } = require("/src/pages");
 
 const map = L.map('mapid').setView([-19.9185934,-43.9379574], 15);
 
@@ -20,9 +20,7 @@ const icon = L.icon({
 
 function addMarker({id, name, lat, lng}){
 
-
     // Create popup overlay
-
     const popup = L.popup({
         closeButton: false,
         className: 'map-popup',
@@ -32,10 +30,12 @@ function addMarker({id, name, lat, lng}){
 
     //create and add marker
 
-    L.marker([lat, lng], {icon})
+    L
+    .marker([lat,lng], {icon})
     .addTo(map)
     .bindPopup(popup)
 }
+
 const orphanagesSpan = document.querySelectorAll('.orphanages span')
 orphanagesSpan.forEach(span => {
     const orphanage = {
