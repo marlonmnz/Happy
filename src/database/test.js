@@ -36,5 +36,5 @@ Database.then(async db => {
     console.log (await db.run("DELETE FROM orphanages WHERE id = '4'"))
     console.log (await db.run("DELETE FROM orphanages WHERE id = '5'"))
 
-    //Finalizado
+    
 })
